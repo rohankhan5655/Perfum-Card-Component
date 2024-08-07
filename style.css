@@ -17,6 +17,7 @@ body {
   width: 100vw;
   flex-direction: column;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .card {
@@ -130,7 +131,7 @@ body {
   flex-direction: column;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  height: 620px;
+  height: 650px;
 }
 .m-card .img > img {
   width: 100%;
@@ -217,7 +218,7 @@ body {
   top: 0px;
   color: hsl(0, 0%, 100%);
   letter-spacing: normal;
-  left: 10px;
+  left: 0px;
 }
 .m-button button img {
   width: 12px;

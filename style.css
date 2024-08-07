@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 450px;
+  height: 320px;
+  display: grid;
+  border-radius: 8px;
+  grid-template-columns: auto auto;
+}
+.card .img > img {
+  width: 225px;
+  height: 320px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.content span {
+  position: relative;
+  top: 20px;
+  right: 0px;
+  color: hsl(228, 12%, 48%);
+  font-size: 9px;
+  letter-spacing: 5px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.content h3 {
+  position: relative;
+  right: 0px;
+  line-height: 22px;
+  top: 35px;
+  font-size: 22px;
+  font-family: "Fraunces";
+  font-weight: 700;
+}
+.content p {
+  position: relative;
+  top: 50px;
+  right: 0px;
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 18px;
+}
+.content .price {
+  display: flex;
+}
+.content .price h3 {
+  top: 70px;
+  right: 0px;
+  font-size: 25px;
+  align-self: center;
+  text-align: center;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  position: relative;
+}
+.content .price span {
+  position: relative;
+  top: 70px;
+  left: 10px;
+  font-size: 9px;
+  text-align: center;
+  align-self: center;
+  letter-spacing: normal;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.button {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.button button {
+  position: relative;
+  top: 80px;
+  height: 30px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  gap: 8px;
+}
+.button button p {
+  position: relative;
+  top: 0px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: normal;
+  right: 0px;
+}
+.button button img {
+  width: 12px;
+}
+.button button:hover {
+  cursor: pointer;
+  background-color: hsl(212, 21%, 14%);
+}
+
+/* For mobile */
+.m-card {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  width: 290px;
+  flex-direction: column;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 620px;
+}
+.m-card .img > img {
+  width: 100%;
+  height: 320px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.m-card .m-content span {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  color: hsl(228, 12%, 48%);
+  font-size: 9px;
+  letter-spacing: 5px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.m-card .m-content h3 {
+  position: relative;
+  left: 20px;
+  line-height: 22px;
+  top: 35px;
+  font-size: 22px;
+  font-family: "Fraunces";
+  font-weight: 700;
+}
+.m-card .m-content p {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 18px;
+}
+.m-card .m-price {
+  display: flex;
+}
+.m-card .m-price h3 {
+  top: 70px;
+  left: 20px;
+  font-size: 25px;
+  align-self: center;
+  text-align: center;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  position: relative;
+}
+.m-card .m-price span {
+  position: relative;
+  top: 70px;
+  left: 30px;
+  font-size: 9px;
+  text-align: center;
+  align-self: center;
+  letter-spacing: normal;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.m-button {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.m-button button {
+  position: relative;
+  top: 80px;
+  height: 30px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: auto;
+  gap: 8px;
+}
+.m-button button p {
+  position: relative;
+  top: 0px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: normal;
+  left: 10px;
+}
+.m-button button img {
+  width: 12px;
+}
+.m-button button:active {
+  background-color: hsl(212, 21%, 14%);
+}
+
+.attribute {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.attribute a {
+  text-decoration: none;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+.attribute a:hover {
+  -webkit-text-decoration: underline hsl(212, 21%, 14%) 2px;
+          text-decoration: underline hsl(212, 21%, 14%) 2px;
+}
+
+@media only screen and (max-width: 460px) {
+  .card {
+    display: none;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .attribute {
+    display: none;
+  }
+}
+@media only screen and (min-width: 460px) {
+  .m-card {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
